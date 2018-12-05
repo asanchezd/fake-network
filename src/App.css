@@ -1,0 +1,262 @@
+body{
+	background-color: #D9D3D5;
+	font-family: "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+.app-header{
+	background-color: #210D2B;
+	color: #A38CA9;
+	padding: 10px 25px;
+}
+
+.app-title{
+	float: left;
+	font-size: 28px;
+}
+
+.app-title img{
+	max-height: 22px;
+	margin-right: 10px;
+	transform: scale(1.6,1.6)
+}
+
+.app-footer{
+	background-color: #210D2B;
+	color: #A38CA9;
+	text-align: center;
+	padding: 6px;
+	font-size: 14px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.app-stats{
+	padding: 7px 0px;
+	float: right;
+}
+
+.app-stats .svg-inline--fa{
+	transform: scale(1.6,1.6);
+}
+
+.app-stat-holder{
+	margin: 0 10px 0 5px;
+	background-color: #FC6130;
+	padding: 2px 8px;
+	color: #220D2C;
+	font-size: 14px;
+	border-radius: 12px;
+	display: inline-block;
+	transform: translate(-2px,6px);
+}
+
+.management-panel-item{
+	background-color: #2D1A38;
+	color: #68536D;
+	width: 100%;
+	min-width: 300px;
+	border-bottom: 1px solid #3F2C48;
+}
+
+.management-panel-item.active{
+	background-color: #24112F;
+	color: #D3BCD9;
+}
+
+.stage-table{
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+
+.stage-table > tbody > tr > td{
+	padding: 0;
+}
+
+.stage-table tr td ul{
+	margin: 0;
+	padding: 0;
+}
+
+.stage-table > tbody > tr > td:last-child{
+	width: 30%;
+	vertical-align: top;
+	background-color: #2A1735;
+}
+
+.management-panel-item tr td:first-child{
+	width: 55px;
+	text-align: right;
+}
+
+.management-panel-item tr td:last-child{
+	width: 1%;
+}
+
+.management-panel-item tr td{
+	padding: 3px 7px;
+}
+
+.management-panel-item .btn{
+	background-color: #6B385E;
+	font-size: 16px;
+	color: #210D2B;
+	padding: 7px 10px 6px 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.management-panel-item .btn.active{
+	background-color: #FEB16E;
+}
+
+.management-panel-item .btn:hover.active{
+	background-color: rgb(211, 139, 77);
+}
+
+.fake-news-bt{
+	background-color: #210D2B;
+	background: linear-gradient(to bottom, #412D4B 0%,#210D2B 100%);
+	color: #A38CA9;
+	position: absolute;
+	top: 50%;
+	height: 220px;
+	padding: 20px 60px;
+	margin-top: -150px;
+	margin-left: -140px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.fake-news-bt:hover{
+	background-color: #311D3B;
+}
+
+.fake-news-bt-text{
+	font-size: 22px;
+}
+
+table.management-panel-item tr td:first-child{
+	padding-right: 15px;
+	min-width: 35px;
+	font-size: 28px;
+	text-align: right;
+}
+
+.intro-instructions{
+	position: fixed;
+	top: 68%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: #A38CA9;
+	background-color: #210D2B;
+	opacity: 0.95;
+	padding: 20px;
+	font-size: 18px;
+}
+
+.intro-instructions > div:last-child{
+	font-size: 13px;
+}
+
+.intro-instructions.completed{
+	display: none;		
+}
+
+.progress-holder{
+	position: fixed;
+	bottom: 40px;
+	left: 0;
+	right: 30.3%;
+}
+
+.progress{
+	margin: 0 10px;
+}
+
+.progress-message{
+	color: #3F2B49;
+	font-size: 14px;
+}
+
+.progress-bar-holder{
+	width: 100%;
+	background-color: #A891AD;
+	height: 6px;
+	margin-top: 5px;
+}
+
+.progress-bar{
+	background-color: #3F2B49;
+	width: 50%;
+	height: 6px;
+	transition: .2s;
+}
+
+.management-panel-item .small{
+	font-size: 75%;
+}
+
+.management-panel-item.active .small{
+	color: #A38CA9;
+}
+
+.app-main-stats{
+	position: absolute;
+	width: 400px;
+	top: -130px;
+	color: #9F8BA3;
+	margin-left: -120px;
+	z-index: -1;
+}
+
+.main-stats-label{
+	text-align: center;
+	font-size: 12px;
+}
+
+.app-main-stat-holder{
+	font-size: 38px;
+	text-align: center;
+}
+
+.no-break{
+	white-space: nowrap;
+}
+
+.emojis-holder{
+	position: absolute;
+	font-size: 36px;
+}
+
+.emoji-holder{
+	background-color: #AE99B2;
+	color: #3E2A48;
+	border-radius: 50%;
+	padding: 8px 0px;
+	text-align: center;
+	width: 58px;
+	position: absolute;
+	transform: translate(55px,-40px);
+	animation: emoji-effect 1.3s forwards; 
+}
+
+@keyframes emoji-effect {
+	0% {
+		transform: translate(55px,-40px);	
+	  	opacity: 0;
+	}
+	40% {
+		transform: translate(55px,-200px);
+	  	opacity: 1;
+	}
+	100% {
+		transform: translate(55px,-260px);
+	  	opacity: 0;
+	}
+  }
